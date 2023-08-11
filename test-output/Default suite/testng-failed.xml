@@ -7,7 +7,6 @@
         <methods>
           <include name="init"/>
           <include name="placeOrder"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- rahulshettyacademy.tests.FactoryTest -->
     </classes>
