@@ -8,9 +8,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import PageObjects.BillingPage;
 import PageObjects.CartPage;
+import PageObjects.ConfirmationPage;
 import PageObjects.LandingPage;
 import PageObjects.ProductCatalogue;
 import TestComponents.BaseClass;
@@ -23,7 +26,10 @@ public class FactoryTest extends BaseClass{
 		LandingPage lp = new LandingPage(driver);
 		ProductCatalogue pc = lp.loginApp(email, password);
 		CartPage cp = pc.addItems(itemName);
-		cp.Checkout();
+		BillingPage bp = cp.Checkout();
+		ConfirmationPage confirm = bp.submit();
+		Boolean match = confirm.confirm();
+		Assert.assertTrue(match);
 		
 	}
 }

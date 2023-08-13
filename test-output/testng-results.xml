@@ -2,19 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-11T11:44:17 IST" name="Default suite" finished-at="2023-08-11T11:44:48 IST" duration-ms="30617">
+  <suite started-at="2023-08-12T14:43:32 IST" name="Default suite" finished-at="2023-08-12T14:44:04 IST" duration-ms="31759">
     <groups>
     </groups>
-    <test started-at="2023-08-11T11:44:17 IST" name="Default test" finished-at="2023-08-11T11:44:48 IST" duration-ms="30617">
+    <test started-at="2023-08-12T14:43:32 IST" name="Default test" finished-at="2023-08-12T14:44:04 IST" duration-ms="31759">
       <class name="rahulshettyacademy.tests.FactoryTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:rahulshettyacademy.tests.FactoryTest@18df8434]" started-at="2023-08-11T11:44:18 IST" name="init" finished-at="2023-08-11T11:44:22 IST" duration-ms="4009" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:rahulshettyacademy.tests.FactoryTest@7cc0cdad]" started-at="2023-08-12T14:43:32 IST" name="init" finished-at="2023-08-12T14:43:36 IST" duration-ms="4229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="placeOrder()[pri:0, instance:rahulshettyacademy.tests.FactoryTest@18df8434]" started-at="2023-08-11T11:44:22 IST" name="placeOrder" finished-at="2023-08-11T11:44:48 IST" duration-ms="26549" status="PASS">
+        <test-method signature="placeOrder()[pri:0, instance:rahulshettyacademy.tests.FactoryTest@7cc0cdad]" started-at="2023-08-12T14:43:36 IST" name="placeOrder" finished-at="2023-08-12T14:44:04 IST" duration-ms="27344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.FactoryTest@7cc0cdad]" started-at="2023-08-12T14:44:04 IST" name="tearDown" finished-at="2023-08-12T14:44:04 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- rahulshettyacademy.tests.FactoryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -20,9 +20,11 @@ public class CartPage extends AbstractComponents{
 	WebElement checkoutButton;
 	
 	
-	public void Checkout() {
+	public BillingPage Checkout() {
 		waitForElementClick(checkoutButton);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click()", checkoutButton);
+		BillingPage bp = new BillingPage(driver);
+		return bp;
 	}
 }

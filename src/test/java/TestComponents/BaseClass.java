@@ -47,10 +47,10 @@ public class BaseClass {
 		driver.get("https://rahulshettyacademy.com/client");
 	}
 	
-//	@AfterMethod(alwaysRun = true)
-//	public void tearDown() {
-//		driver.close();
-//	}
-//	
+	@AfterMethod(alwaysRun = true)
+	public void tearDown() {
+		driver.close();
+	}
+	
 	
 }
