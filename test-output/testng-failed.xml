@@ -6,7 +6,8 @@
       <class name="rahulshettyacademy.tests.FactoryTest">
         <methods>
           <include name="init"/>
-          <include name="placeOrder"/>
+          <include name="placeOrder" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- rahulshettyacademy.tests.FactoryTest -->
     </classes>

@@ -20,10 +20,18 @@ public class ConfirmationPage extends AbstractComponents{
 	@FindBy(className= "hero-primary")
 	WebElement message;
 	
+	@FindBy(xpath = "//li[5]/button[@class='btn btn-custom']")
+	WebElement signoutButton;
+	
 	public boolean confirm() {
 //		Assert.assertEquals(false, null);
 		return (message.getText().equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 //		message.getText();
+	}
+	
+	public void signOut() {
+		goTo("myorders");
+//		signoutButton.click();
 	}
 
 }
